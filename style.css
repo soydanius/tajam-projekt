@@ -7,13 +7,15 @@
 /* <!-- <hero-section> --> */
 #hero-section {
   background-image: url("images/bgk-header.png");
+  background-size: cover;
   /* border: 4px solid #00E0D0; */
-  width: 1300px;
-  height: 650px;
+  /* width: 1300px;
+  height: 650px; */
+  width: 100%;
+  height: 90vh;
 }
 
-
-nav {
+#hero-section > nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px 10px 205px;
@@ -22,7 +24,7 @@ nav {
 .nav-left {
   display: flex;
   align-items: center;
-  color: #00E0D0;
+  color: #00e0d0;
   font: 18px Arial;
 }
 
@@ -31,7 +33,7 @@ nav {
   margin: 5px 15px;
 }
 
-nav ul {
+#hero-section > nav ul {
   float: left;
   width: 80%;
   padding-right: 200px;
@@ -59,15 +61,15 @@ nav ul {
 
 #element {
   font-size: larger;
-  color: #00E0D0;
+  color: #00e0d0;
 }
 
 #buttonLearnMore {
-  border: 2px solid #00E0D0;
+  border: 2px solid #00e0d0;
   font-family: sans-serif;
   text-align: center;
   justify-self: center;
-  color: #00E0D0;
+  color: #00e0d0;
   font-family: sans-serif;
   border-radius: 1px;
   width: 150px;
@@ -77,23 +79,20 @@ nav ul {
 
 /* end of <!-- <hero-section> --> */
 
-
 a {
   text-decoration: none;
 }
 
 .button1 {
-  color: #00E0D0;
+  color: #00e0d0;
 }
 
 a:hover {
   transition: linear 0.7s;
   color: #fff;
-  background-color: #00E0D0;
+  background-color: #00e0d0;
   padding: 2em;
 }
-
-
 
 .distance {
   font-size: 1.2em;
@@ -101,16 +100,16 @@ a:hover {
 }
 
 #our_story-section {
-  padding-top: 3em;
+  height: 55vh;
 }
 
 .button {
-  padding: .7em;
+  padding: 0.7em;
   text-transform: uppercase;
   font-size: 1em;
   font-weight: bold;
-  border: 2px solid #00E0D0;
-  color: #00E0D0;
+  border: 2px solid #00e0d0;
+  color: #00e0d0;
   background-color: #fff;
 }
 
@@ -132,19 +131,19 @@ a:hover {
 
 #box3 {
   margin-left: 18%;
-  width: 38%; 
-  padding-right: 4em; 
+  width: 38%;
+  padding-right: 4em;
 }
 
 #logoBox {
   width: 18em;
   height: auto;
   margin-left: 27rem;
-  padding-top: .9em;
+  padding-top: 0.9em;
 }
 
 .headline {
-  color: #413D4B;
+  color: #413d4b;
   text-transform: uppercase;
   font-size: 2em;
   font-family: sans-serif;
@@ -152,32 +151,41 @@ a:hover {
 }
 
 #contentHeadline {
-  font-size: .9em;
+  font-size: 0.9em;
   font-family: sans-serif;
-  color: #413D4B;
+  color: #413d4b;
 }
 
 #watch-section {
   background-image: url(images/bgk-middle.png);
   background-repeat: no-repeat;
-  width: 102.5%;
+  width: 100%;
   background-size: cover;
-  height: 38em;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.watch-section__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #youtube {
-display: block;
-margin: auto;
-padding-top: 20%;  
-width: 60px;
-  
+  width: 7%;
 }
 
 #headline2 {
+  width: 100%;
   padding-top: 2em;
   text-align: center;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.25rem;
 }
 
 /* EXPERTISE SECTION */
@@ -271,14 +279,14 @@ width: 60px;
   border-right: solid 1px #ebebeb;
 }
 
-
 /* <!-- <team section> --> */
 
 #team-section {
   /* border: 8px solid yellowgreen; */
   background-image: url("images/bgk-header.png");
-  width: 1300px;
-  height: 650px;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
 }
 
 .meetTeam {
@@ -286,8 +294,7 @@ width: 60px;
   color: rgb(228, 226, 226);
   align-items: center;
   justify-content: center;
-  width: 1300px;
-  height: 650px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -298,20 +305,19 @@ width: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px 50px 10px 50px;  
+  padding: 20px 50px 10px 50px;
   gap: 10px;
-  
 }
 
- .photos > div {
-  border: 1px solid rgb(116, 110, 111); 
+.photos > div {
+  border: 1px solid rgb(116, 110, 111);
   background-color: none;
   width: 160px;
   text-align: center;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
-} 
+}
 
 h5 {
   color: #e5e5e5;
@@ -325,18 +331,17 @@ h5 {
 }
 
 #buttonHiring {
-  border: 2px solid #00E0D0;
+  border: 2px solid #00e0d0;
   font-family: sans-serif;
   text-align: center;
   justify-self: center;
-  color: #00E0D0;
+  color: #00e0d0;
   font-family: sans-serif;
   border-radius: 1px;
   width: 150px;
   padding: 8px 8px 8px 8px;
   background-color: none;
 }
-
 
 /* end of <!-- <team section> --> */
 
@@ -474,7 +479,6 @@ footer {
 
 .footer__newsletter {
   display: flex;
-  align-items: center;
   padding-top: 4px;
   gap: 10px;
   height: 25%;
