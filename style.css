@@ -112,8 +112,95 @@ width: 60px;
   font-size: 1em;
 }
 
+/* EXPERTISE SECTION */
 #expertise-section {
-  color: fuchsia;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+/* Header */
+.expertise-section__header {
+  color: #413d4b;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.expertise-section__header-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.25em;
+}
+
+.expertise-section__header-text {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  margin-bottom: 0.5em;
+}
+
+/* Content */
+.expertise-section__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.expertise-section__content-img {
+  height: 3.5rem;
+}
+
+.expertise-section__content-title {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #413d4b;
+}
+
+.expertise-section__content-text {
+  font-size: 1rem;
+  color: #333333;
+}
+
+/* Grid */
+.expertise-section__grid-container {
+  height: 85%;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, minmax(250px, 1fr));
+}
+
+@media screen and (max-width: 1250px) {
+  .expertise-section__grid-container {
+    width: 90%;
+  }
+}
+
+.expertise-section__grid-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.5em;
+}
+
+.expertise-section__grid-item:nth-child(-n + 3) {
+  border-bottom: solid 1px #ebebeb;
+}
+
+.expertise-section__grid-item:nth-child(3n - 1) {
+  border-left: solid 1px #ebebeb;
+  border-right: solid 1px #ebebeb;
 }
 
 #team-section {
